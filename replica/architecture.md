@@ -17,16 +17,17 @@ Abrir `site/index.html` ou `app/index.html` direto no navegador, ou servir a pas
 - Carteirinha: QR assinado no servidor (JWT curto) validado por app do portão.
 - Site: Next.js ou Astro na Vercel; app: manter PWA ou empacotar com Capacitor para lojas.
 
-## Design tokens
+## Design tokens (v0.2 — celeste + caveira amarela)
 | papel | cor | uso |
 | --- | --- | --- |
-| --celeste | #1E9BE0 | primária (azul do Paysandu) |
-| --celeste-700 | #0B5E99 | hover/pressed |
-| --noite | #06182B | fundo escuro |
-| --noite-2 | #0C2540 | cartões |
-| --branco | #FFFFFF | texto sobre escuro |
-| --ouro | #F5C542 | destaques (estrela/títulos) |
-| --alerta | #E5484D | erro/vencido |
-| --ok | #2EBD85 | ativo |
-Contraste: branco sobre --noite ≈ 17:1; branco sobre --celeste-700 ≈ 6.7:1 (botões usam celeste-700 para texto branco em AA).
-Tipografia: "Bebas Neue" (títulos, Google Fonts, OFL) + "Inter" (texto, OFL).
+| --fundo | #7ACDF3 | fundo das páginas (azul celeste) |
+| --fundo-forte | #35AAE6 | cabeçalho, heróis, rodapé |
+| --celeste | #1E9BE0 | marca |
+| --superficie | #FFFFFF | cartões |
+| --texto | #0A2233 | texto e contornos (o preto da caveira) |
+| --texto-2 | #2D4B60 | texto secundário |
+| --amarelo | #FFD200 | caveira, botões principais, faixa do lema |
+Contraste (WCAG): texto/fundo 9.2:1 · texto-2/fundo 5.2:1 · texto/amarelo 11.2:1 · texto/fundo-forte 6.2:1.
+Links usam a cor do texto com sublinhado (celeste-escuro sobre o fundo daria só 3.3:1).
+Lema em destaque: "Defender o Paysandu, a nossa única meta" (faixa amarela no app e no site).
+Tipografia: "Bebas Neue" (títulos, OFL) + "Inter" (texto, OFL).

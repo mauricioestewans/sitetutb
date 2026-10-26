@@ -1,5 +1,5 @@
 // Service worker: cache dos arquivos do app para uso offline (estratégia network-first).
-const CACHE = "tutb-v1";
+const CACHE = "tutb-v2";
 const ARQUIVOS = ["./", "./index.html", "./app.css", "./app.js", "./manifest.webmanifest", "../shared/brand.css", "../shared/data.js", "../shared/emblem.svg"];
 
 self.addEventListener("install", (e) => e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARQUIVOS)).then(() => self.skipWaiting())));

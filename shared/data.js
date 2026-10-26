@@ -6,6 +6,7 @@ window.TUTB = {
     sigla: "TUTB",
     apelido: "Terror Bicolor",
     lema: "O Poder que Vem do Norte",
+    meta: "Defender o Paysandu, a nossa única meta",
     fundacao: "1989-06-16",
     clube: "Paysandu Sport Club",
     sede: "Av. Almirante Barroso, 654, Loja 13 — Estádio da Curuzu, Belém-PA",
@@ -48,9 +49,9 @@ window.TUTB = {
   produtos: [
     { id: "p1", nome: "Camisa Oficial 2026", cat: "Camisas", preco: 129.9, cores: ["#1E9BE0", "#FFFFFF"], tamanhos: ["P", "M", "G", "GG", "XG"], estoque: 40 },
     { id: "p2", nome: "Camisa Listrada Curuzu", cat: "Camisas", preco: 119.9, cores: ["#FFFFFF", "#1E9BE0"], tamanhos: ["P", "M", "G", "GG"], estoque: 25 },
-    { id: "p3", nome: "Camisa Noite Bicolor", cat: "Camisas", preco: 119.9, cores: ["#06182B", "#1E9BE0"], tamanhos: ["M", "G", "GG"], estoque: 0 },
-    { id: "p4", nome: "Moletom Poder do Norte", cat: "Agasalhos", preco: 219.9, cores: ["#0B5E99", "#FFFFFF"], tamanhos: ["P", "M", "G", "GG"], estoque: 12 },
-    { id: "p5", nome: "Boné TUTB 1989", cat: "Acessórios", preco: 69.9, cores: ["#06182B", "#F5C542"], tamanhos: ["Único"], estoque: 30 },
+    { id: "p3", nome: "Camisa Caveira Amarela", cat: "Camisas", preco: 119.9, cores: ["#FFD200", "#0A2233"], tamanhos: ["M", "G", "GG"], estoque: 0 },
+    { id: "p4", nome: "Moletom Poder do Norte", cat: "Agasalhos", preco: 219.9, cores: ["#35AAE6", "#FFD200"], tamanhos: ["P", "M", "G", "GG"], estoque: 12 },
+    { id: "p5", nome: "Boné TUTB 1989", cat: "Acessórios", preco: 69.9, cores: ["#0A2233", "#FFD200"], tamanhos: ["Único"], estoque: 30 },
     { id: "p6", nome: "Bandeira 1,5 m", cat: "Acessórios", preco: 89.9, cores: ["#1E9BE0", "#FFFFFF"], tamanhos: ["Único"], estoque: 18 },
     { id: "p7", nome: "Cachecol Bicolor", cat: "Acessórios", preco: 49.9, cores: ["#1E9BE0", "#FFFFFF"], tamanhos: ["Único"], estoque: 50 },
     { id: "p8", nome: "Camisa Infantil", cat: "Camisas", preco: 89.9, cores: ["#1E9BE0", "#FFFFFF"], tamanhos: ["4", "6", "8", "10", "12"], estoque: 20 }
@@ -118,12 +119,12 @@ window.TUTB = {
 window.TUTB.svgProduto = function (p) {
   const [a, b] = p.cores;
   if (p.cat === "Acessórios") {
-    return `<svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" fill="${b === "#FFFFFF" ? "#0C2540" : "#0C2540"}"/>
-      <rect x="18" y="38" width="84" height="44" rx="8" fill="${a}"/><rect x="18" y="52" width="84" height="16" fill="${b}"/>
+    return `<svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" fill="#EEF8FE"/>
+      <rect x="18" y="38" width="84" height="44" rx="8" fill="${a}" stroke="#0A2233" stroke-width="2"/><rect x="18" y="52" width="84" height="16" fill="${b}"/>
       <text x="60" y="65" text-anchor="middle" font-family="Bebas Neue,Impact" font-size="14" fill="${a}">TUTB</text></svg>`;
   }
-  return `<svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" fill="#0C2540"/>
-    <path d="M40 18 L52 14 Q60 22 68 14 L80 18 L102 32 L92 50 L84 46 V104 H36 V46 L28 50 L18 32 Z" fill="${a}" stroke="rgba(0,0,0,.25)"/>
+  return `<svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" fill="#EEF8FE"/>
+    <path d="M40 18 L52 14 Q60 22 68 14 L80 18 L102 32 L92 50 L84 46 V104 H36 V46 L28 50 L18 32 Z" fill="${a}" stroke="#0A2233" stroke-width="2"/>
     <path d="M36 58 H84 V70 H36 Z" fill="${b}"/>
     <text x="60" y="88" text-anchor="middle" font-family="Bebas Neue,Impact" font-size="16" fill="${b}">TUTB</text></svg>`;
 };

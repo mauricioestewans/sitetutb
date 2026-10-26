@@ -1,14 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Emblema TUTB (provisório)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Emblema TUTB: caveira amarela (provisório)">
   <defs>
-    <clipPath id="s"><path d="M60 4 L114 20 V70 C114 104 88 126 60 136 C32 126 6 104 6 70 V20 Z"/></clipPath>
+    <clipPath id="escudo"><path d="M60 4 L114 20 V70 C114 104 88 126 60 136 C32 126 6 104 6 70 V20 Z"/></clipPath>
   </defs>
-  <path d="M60 4 L114 20 V70 C114 104 88 126 60 136 C32 126 6 104 6 70 V20 Z" fill="#06182B" stroke="#FFFFFF" stroke-width="5"/>
-  <g clip-path="url(#s)">
-    <rect x="0" y="62" width="120" height="16" fill="#1E9BE0"/>
-    <rect x="0" y="84" width="120" height="16" fill="#FFFFFF"/>
-    <rect x="0" y="106" width="120" height="40" fill="#1E9BE0"/>
+  <!-- escudo celeste com listras brancas -->
+  <path d="M60 4 L114 20 V70 C114 104 88 126 60 136 C32 126 6 104 6 70 V20 Z" fill="#35AAE6"/>
+  <g clip-path="url(#escudo)" fill="#FFFFFF" opacity=".35">
+    <rect x="16" y="0" width="12" height="140"/><rect x="46" y="0" width="12" height="140"/><rect x="76" y="0" width="12" height="140"/><rect x="106" y="0" width="12" height="140"/>
   </g>
-  <path d="M60 16 l5.3 10.8 11.9 1.7 -8.6 8.4 2 11.8 -10.6 -5.6 -10.6 5.6 2 -11.8 -8.6 -8.4 11.9 -1.7z" fill="#F5C542"/>
-  <text x="60" y="76" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="26" fill="#FFFFFF" letter-spacing="2" stroke="#06182B" stroke-width="0.6">TUTB</text>
-  <text x="60" y="97" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="13" fill="#06182B" letter-spacing="1">1989</text>
+  <path d="M60 4 L114 20 V70 C114 104 88 126 60 136 C32 126 6 104 6 70 V20 Z" fill="none" stroke="#0A2233" stroke-width="5"/>
+
+  <!-- caveira amarela -->
+  <g stroke="#0A2233" stroke-width="3" stroke-linejoin="round">
+    <path d="M32 52 C32 33 45 22 60 22 C75 22 88 33 88 52 V60 C88 66 84 70 79 71 V82 H41 V71 C36 70 32 66 32 60 Z" fill="#FFD200"/>
+    <path d="M41 82 V90 C41 93 43 95 46 95 H74 C77 95 79 93 79 90 V82" fill="#FFD200"/>
+  </g>
+  <g fill="#0A2233">
+    <path d="M38 52 C38 46 43 43 49 44 C55 45 57 50 55 56 C53 61 47 63 42 61 C39 59 38 56 38 52 Z"/>
+    <path d="M82 52 C82 46 77 43 71 44 C65 45 63 50 65 56 C67 61 73 63 78 61 C81 59 82 56 82 52 Z"/>
+    <path d="M60 62 L55 72 H65 Z"/>
+  </g>
+  <g stroke="#0A2233" stroke-width="2.4" stroke-linecap="round">
+    <line x1="50" y1="80" x2="50" y2="93"/><line x1="56.7" y1="80" x2="56.7" y2="94"/><line x1="63.3" y1="80" x2="63.3" y2="94"/><line x1="70" y1="80" x2="70" y2="93"/>
+  </g>
+
+  <!-- faixa TUTB -->
+  <path d="M14 100 H106 L100 112 L106 124 H14 L20 112 Z" fill="#0A2233"/>
+  <text x="60" y="119" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="19" fill="#FFD200" letter-spacing="3">TUTB 1989</text>
 </svg>

@@ -28,7 +28,7 @@
 
   // ---------- componentes ----------
   const escudoNosso = `<div class="escudo"><img src="../shared/emblem.svg" alt=""></div>`;
-  const escudoDeles = (sigla) => `<div class="escudo" style="background:var(--noite-3);color:#fff">${esc(sigla)}</div>`;
+  const escudoDeles = (sigla) => `<div class="escudo escudo--deles">${esc(sigla)}</div>`;
 
   const heroJogo = (j) => {
     if (!j) return `<div class="hero card"><p class="hero__comp">Agenda</p><h2>Sem jogos marcados</h2><p class="sub">Assim que a tabela sair, avisamos aqui.</p></div>`;
@@ -88,7 +88,7 @@
     const s = statusSocio();
     return `
       <p class="sub" style="margin:0">Fala, bicolor${st.socio ? " " + esc(st.socio.nome.split(" ")[0]) : ""}! 💙🤍</p>
-      <h1 class="pagina">${esc(D.info.lema)}</h1>
+      <h1 class="pagina">${esc(D.info.meta)}</h1>
       ${heroJogo(D.proximoJogo())}
       <div class="atalhos">
         <a class="atalho" href="#/socio"><span>⭐</span>Seja sócio</a>
@@ -162,7 +162,7 @@
     const s = statusSocio(), so = st.socio;
     return `<h1 class="pagina">Carteirinha</h1>
       <div class="cartao">
-        <div class="cartao__top"><img src="../shared/emblem.svg" alt=""><b>TUTB</b></div><div></div>
+        <div class="cartao__top"><img src="../shared/emblem.svg" alt=""><b>TUTB</b></div><div class="cartao__lema">${esc(D.info.meta)}</div>
         <div class="cartao__nome"><strong>${esc(so.nome)}</strong><span>Sócio ${esc(planoNome(so.plano))} · Nº ${esc(so.numero)} · ${esc(so.bonde)}</span></div>
       </div>
       <div class="card status-linha">
@@ -212,7 +212,7 @@
         </div>`; }).join("")}</div>
       <div class="card totais">
         <div><span>Subtotal</span><span>${D.brl(sub)}</span></div>
-        ${d ? `<div style="color:#6BE0B0"><span>Desconto sócio (${d * 100}%)</span><span>− ${D.brl(desc)}</span></div>` : ""}
+        ${d ? `<div class="desc"><span>Desconto sócio (${d * 100}%)</span><span>− ${D.brl(desc)}</span></div>` : ""}
         <div><span>Frete</span><span>${frete ? D.brl(frete) : "Grátis"}</span></div>
         <div class="total"><span>Total</span><span>${D.brl(sub - desc + frete)}</span></div>
       </div>
@@ -274,14 +274,15 @@
         <h3 style="font-size:1.4rem">Sobre a TUTB</h3>
         <p class="sub" style="margin:.4rem 0 0">${esc(D.info.nome)} · fundada em 16/06/1989 · ${esc(D.info.sede)}</p>
       </div>
-      <p class="aviso-demo" style="margin-top:1rem;text-align:center">Protótipo v0.1 · dados de exemplo</p>`;
+      <div class="lema-bloco"><img src="../shared/emblem.svg" alt="">${esc(D.info.meta)}</div>
+      <p class="aviso-demo" style="margin-top:1rem;text-align:center">Protótipo v0.2 · dados de exemplo</p>`;
 
   T.letras = () => `<h1 class="pagina">Cantos</h1><p class="sub">Aprende e solta a voz na arquibancada.</p>
       ${D.letras.map((l, i) => `<details class="card letra" ${i ? "" : "open"}><summary>${esc(l.titulo)}</summary><pre>${esc(l.texto)}</pre></details>`).join("")}
       <p class="aviso-demo">Letras provisórias escritas para o protótipo — substituir pelos cantos oficiais.</p>`;
 
   T.conduta = () => `<h1 class="pagina">Código de conduta</h1><p class="sub">Festa, paz e respeito. É assim que a TUTB faz história.</p>
-      <div class="lista">${D.conduta.map((c, i) => `<div class="card item"><div class="item__data"><b>${i + 1}</b></div><div><p style="color:var(--branco);font-size:.95rem;margin:0">${esc(c)}</p></div></div>`).join("")}</div>`;
+      <div class="lista">${D.conduta.map((c, i) => `<div class="card item"><div class="item__data"><b>${i + 1}</b></div><div><p style="color:var(--texto);font-size:.95rem;margin:0">${esc(c)}</p></div></div>`).join("")}</div>`;
 
   T.suporte = () => `<h1 class="pagina">Suporte</h1><p class="sub">Problema com plano, pedido ou carteirinha? Abra um chamado — respondemos por aqui.</p>
       <form id="form-sup" class="card" style="padding:1.2rem" novalidate>

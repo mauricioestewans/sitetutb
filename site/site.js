@@ -26,13 +26,13 @@
 
   // ---------- banner ----------
   const slides = [
-    { bg: "linear-gradient(115deg,#06182B 30%,#0B5E99)", t: "O Poder que Vem do Norte", p: "Desde 1989 empurrando o Papão. Festa, bateria e paz na arquibancada.", a: [["Associe-se", "#associe", "btn--ouro"], ["Nossa história", "#historia", "btn--ghost"]] },
-    { bg: "linear-gradient(115deg,#06182B 25%,#1E9BE0)", t: "Caravana é com a TUTB", p: "Onde o Paysandu jogar, a gente vai junto. Reserve sua vaga pelo app.", a: [["Ver agenda", "#agenda", "btn--claro"], ["Abrir app", "../app/index.html#/caravanas", "btn--ghost"]] },
-    { bg: "linear-gradient(115deg,#041222 30%,#143456)", t: "Vista o manto bicolor", p: "Camisas, bandeiras e acessórios. Sócio tem desconto na loja.", a: [["Ir à loja", "#loja", "btn--ouro"]] }
+    { bg: "linear-gradient(115deg,#7ACDF3 25%,#35AAE6)", t: "Defender o Paysandu, a nossa *única meta*", p: "Desde 1989 empurrando o Papão. O Poder que Vem do Norte: festa, bateria e paz na arquibancada.", a: [["Associe-se", "#associe", "btn--ouro"], ["Nossa história", "#historia", "btn--claro"]] },
+    { bg: "linear-gradient(115deg,#9BDAF7 20%,#1E9BE0)", t: "Caravana é com a TUTB", p: "Onde o Paysandu jogar, a gente vai junto. Reserve sua vaga pelo app.", a: [["Ver agenda", "#agenda", "btn--ouro"], ["Abrir app", "../app/index.html#/caravanas", "btn--claro"]] },
+    { bg: "linear-gradient(115deg,#7ACDF3 30%,#FFD200 140%)", t: "Vista o manto bicolor", p: "Camisas, bandeiras e acessórios. Sócio tem desconto na loja.", a: [["Ir à loja", "#loja", "btn--ouro"]] }
   ];
   $("#slides").innerHTML = slides.map((s, i) => `<div class="slide ${i ? "" : "on"}" style="background:${s.bg}" role="group" aria-roledescription="slide" aria-label="${i + 1} de ${slides.length}" ${i ? 'aria-hidden="true"' : ""}>
       <img class="slide__arte" src="../shared/emblem.svg" alt="">
-      <div class="wrap"><p class="sobre">TUTB · Paysandu</p><${i ? "h2" : "h1"} class="titulo" style="font-size:clamp(3rem,8vw,6.4rem);max-width:12ch">${esc(s.t)}</${i ? "h2" : "h1"}><p>${esc(s.p)}</p>
+      <div class="wrap"><p class="sobre">TUTB · Paysandu</p><${i ? "h2" : "h1"} class="titulo slide__titulo">${esc(s.t).replace(/\*(.+?)\*/, "<em>$1</em>")}</${i ? "h2" : "h1"}><p>${esc(s.p)}</p>
       <div class="acoes">${s.a.map(([l, h, c]) => `<a class="btn ${c}" href="${h}">${l}</a>`).join("")}</div></div></div>`).join("");
   $("#pontos").innerHTML = slides.map((_, i) => `<button aria-label="Slide ${i + 1}" class="${i ? "" : "on"}"></button>`).join("");
   let atual = 0, timer;
@@ -73,7 +73,7 @@
 
   // ---------- notícias ----------
   const icoCat = { Social: "🤝", Caravanas: "🚌", Festa: "🎉", Bateria: "🥁" };
-  const corCat = { Social: "#0B5E99", Caravanas: "#143456", Festa: "#1E9BE0", Bateria: "#08365C" };
+  const corCat = { Social: "#35AAE6", Caravanas: "#7ACDF3", Festa: "#FFD200", Bateria: "#1E9BE0" };
   const cats = ["Todas", ...new Set(D.noticias.map(n => n.cat))];
   const renderNoticias = (cat) => {
     $("#filtro-noticias").innerHTML = cats.map(c => `<button role="tab" aria-selected="${c === cat}" class="${c === cat ? "on" : ""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");
