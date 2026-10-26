@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+
+# A raiz abre o site institucional; o app fica em /app/
+[[redirects]]
+  from = "/"
+  to = "/site/"
+  status = 301
+
+[[redirects]]
+  from = "/app"
+  to = "/app/"
+  status = 301
+
+[[headers]]
+  for = "/app/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
