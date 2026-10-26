@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Site oficial da TUTB — Tradição Uniformizada Torcida Bicolor, a torcida do Paysandu desde 1989. O Poder que Vem do Norte.">
+  <meta name="theme-color" content="#06182B">
+  <title>TUTB — O Poder que Vem do Norte</title>
+  <link rel="icon" href="../shared/emblem.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../shared/brand.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="faixa-topo"><div class="wrap"><span>💙🤍 Paysandu Sport Club · desde 16/06/1989</span>
+    <span class="faixa-topo__redes" id="redes-topo"></span></div></div>
+
+  <header class="cab" id="cab">
+    <div class="wrap cab__in">
+      <a href="#inicio" class="marca"><img src="../shared/emblem.svg" alt="" width="42" height="49"><span><b>TUTB</b><small>Torcida Bicolor</small></span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li class="tem-sub"><button aria-expanded="false">A Torcida</button>
+            <ul><li><a href="#historia">Quem somos</a></li><li><a href="#historia">História</a></li><li><a href="#diretoria">Diretoria</a></li><li><a href="#subsedes">Subsedes e bondes</a></li><li><a href="#conduta">Estatuto e conduta</a></li></ul></li>
+          <li class="tem-sub"><button aria-expanded="false">Arquibancada</button>
+            <ul><li><a href="#ideologia">Ideologia</a></li><li><a href="#social">Responsabilidade social</a></li><li><a href="#cantos">Letras dos cantos</a></li><li><a href="#agenda">Agenda e caravanas</a></li></ul></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#loja">Loja</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn--ouro btn--pq" href="#associe">Associe-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- W02 banner -->
+    <section class="banner" id="inicio" aria-roledescription="carrossel" aria-label="Destaques">
+      <div class="banner__slides" id="slides"></div>
+      <div class="banner__pontos" id="pontos"></div>
+    </section>
+
+    <!-- W03 próximo jogo -->
+    <section class="wrap jogo" id="agenda">
+      <div class="jogo__card" id="proximo"></div>
+      <div class="jogo__lista"><h3>Próximos jogos</h3><ul id="agenda-lista"></ul>
+        <a class="link-seta" href="../app/index.html#/caravanas">Reservar caravana no app →</a></div>
+    </section>
+
+    <!-- W04 notícias -->
+    <section class="sec wrap" id="noticias">
+      <div class="sec__cab"><p class="sobre">Fique por dentro</p><h2>Notícias</h2></div>
+      <div class="filtro-noticias" id="filtro-noticias" role="tablist"></div>
+      <div class="grid-noticias" id="grid-noticias"></div>
+    </section>
+
+    <!-- W05 história -->
+    <section class="sec sec--listras" id="historia">
+      <div class="wrap duas">
+        <div>
+          <p class="sobre">Quem somos</p>
+          <h2>Do “Terror da Curuzu” ao Poder que Vem do Norte</h2>
+          <p class="lead">A <b>Tradição Uniformizada Torcida Bicolor</b> — a TUTB, conhecida por gerações como <b>Terror Bicolor</b> — nasceu em Belém em 16 de junho de 1989, quando Gersinho e um grupo de amigos decidiram apoiar o Paysandu de um jeito diferente: com festa, bateria, faixas e presença em todo canto onde o Papão jogar.</p>
+          <div class="numeros">
+            <div><b data-conta="1989">1989</b><span>fundação</span></div>
+            <div><b data-conta="7">7</b><span>subsedes</span></div>
+            <div><b data-conta="35">35</b><span>anos de arquibancada</span></div>
+          </div>
+        </div>
+        <ol class="linha-tempo" id="linha-tempo"></ol>
+      </div>
+    </section>
+
+    <!-- W06 ideologia + social -->
+    <section class="sec wrap" id="ideologia">
+      <div class="sec__cab"><p class="sobre">No que acreditamos</p><h2>Ideologia</h2></div>
+      <div class="pilares">
+        <article class="card pilar"><span>🥁</span><h3>Festa</h3><p>Bateria, mosaico, bandeirão e canto os 90 minutos. A arquibancada é o nosso palco.</p></article>
+        <article class="card pilar"><span>🤝</span><h3>União</h3><p>Bondes nos bairros, subsedes pelo Brasil e respeito às torcidas aliadas.</p></article>
+        <article class="card pilar"><span>🕊️</span><h3>Paz</h3><p>Violência não representa a TUTB. Torcer é apoiar, não agredir.</p></article>
+        <article class="card pilar"><span>💙</span><h3>Paysandu acima de tudo</h3><p>Apoio incondicional ao clube, com cobrança responsável quando precisa.</p></article>
+      </div>
+    </section>
+
+    <section class="sec wrap social" id="social">
+      <div class="social__txt">
+        <p class="sobre">Responsabilidade social</p>
+        <h2>A torcida que também joga pela cidade</h2>
+        <p>Campanhas de agasalho, doação de sangue, natal solidário e escolinha de bateria gratuita para jovens. Quer ajudar ou indicar uma instituição? Fale com a gente.</p>
+        <a class="btn" href="#contato" data-assunto="Responsabilidade social">Quero participar</a>
+      </div>
+      <ul class="social__lista">
+        <li><b>2 t</b><span>de agasalhos doados</span></li>
+        <li><b>4</b><span>campanhas de sangue por ano</span></li>
+        <li><b>120</b><span>alunos na escolinha de bateria</span></li>
+      </ul>
+      <p class="aviso-demo social__nota">Números de exemplo — substituir pelos dados reais da torcida.</p>
+    </section>
+
+    <!-- W08 associe-se -->
+    <section class="sec sec--azul" id="associe">
+      <div class="wrap">
+        <div class="sec__cab sec__cab--centro"><p class="sobre">Faça parte</p><h2>Associe-se à TUTB</h2><p class="lead">Carteirinha digital, descontos na Rede de parceiros, prioridade nas caravanas e voz nas assembleias.</p></div>
+        <div class="planos" id="planos"></div>
+        <p class="centro"><a class="link-seta" href="../app/index.html">Já é sócio? Abra o app e veja sua carteirinha →</a></p>
+      </div>
+    </section>
+
+    <!-- W09 loja -->
+    <section class="sec wrap" id="loja">
+      <div class="sec__cab sec__cab--linha"><div><p class="sobre">Vista o manto</p><h2>Loja</h2></div><a class="btn btn--ghost" href="../app/index.html#/loja">Ver loja completa</a></div>
+      <div class="grid-loja" id="grid-loja"></div>
+    </section>
+
+    <!-- W07 diretoria + subsedes -->
+    <section class="sec sec--escuro" id="diretoria">
+      <div class="wrap duas">
+        <div>
+          <p class="sobre">Organização</p><h2>Diretoria</h2>
+          <ul class="diretoria">
+            <li><span class="avatar">P</span><div><b>Presidência</b><small>A definir pela torcida</small></div></li>
+            <li><span class="avatar">V</span><div><b>Vice-presidência</b><small>A definir pela torcida</small></div></li>
+            <li><span class="avatar">F</span><div><b>Festa e bateria</b><small>A definir pela torcida</small></div></li>
+            <li><span class="avatar">S</span><div><b>Social e comunicação</b><small>A definir pela torcida</small></div></li>
+          </ul>
+        </div>
+        <div id="subsedes">
+          <p class="sobre">Pelo Brasil</p><h2>Subsedes e bondes</h2>
+          <ul class="subsedes" id="lista-subsedes"></ul>
+          <p class="sede">📍 <b>Sede:</b> <span id="sede"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- conduta + cantos -->
+    <section class="sec wrap duas" id="conduta">
+      <div>
+        <p class="sobre">Estatuto</p><h2>Código de conduta</h2>
+        <ol class="conduta" id="lista-conduta"></ol>
+      </div>
+      <div id="cantos">
+        <p class="sobre">Solta a voz</p><h2>Letras dos cantos</h2>
+        <div id="lista-cantos"></div>
+        <p class="aviso-demo">Letras provisórias — substituir pelos cantos oficiais.</p>
+      </div>
+    </section>
+
+    <!-- W10 parceiros -->
+    <section class="sec sec--listras" id="parceiros">
+      <div class="wrap">
+        <div class="sec__cab sec__cab--centro"><p class="sobre">Rede Desconto</p><h2>Nossos parceiros</h2></div>
+        <div class="parceiros" id="lista-parceiros"></div>
+        <div class="cta-parceiro card">
+          <div><h3>Seja um parceiro</h3><p>Anuncie para milhares de bicolores e entre na Rede Desconto da TUTB.</p></div>
+          <a class="btn btn--ouro" href="#contato" data-assunto="Quero anunciar / ser parceiro">Anuncie</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- W11 contato -->
+    <section class="sec wrap duas" id="contato">
+      <div>
+        <p class="sobre">Fale com a TUTB</p><h2>Contato</h2>
+        <p class="lead">Dúvidas, imprensa, parcerias ou ações sociais. Respondemos em até 2 dias úteis.</p>
+        <ul class="contato-info">
+          <li>📍 <span id="sede2"></span></li>
+          <li>🕒 Sede aberta em dias de jogo e às quintas (ensaio da bateria)</li>
+        </ul>
+        <div class="redes" id="redes"></div>
+      </div>
+      <form class="card form" id="form-contato" novalidate>
+        <div class="campo"><label for="c-nome">Nome</label><input id="c-nome" name="nome" autocomplete="name" required><span class="erro"></span></div>
+        <div class="campo"><label for="c-email">E-mail</label><input id="c-email" name="email" type="email" autocomplete="email" required><span class="erro"></span></div>
+        <div class="campo"><label for="c-assunto">Assunto</label>
+          <select id="c-assunto" name="assunto" required><option value="">Escolha…</option><option>Quero me associar</option><option>Quero anunciar / ser parceiro</option><option>Responsabilidade social</option><option>Imprensa</option><option>Outro</option></select><span class="erro"></span></div>
+        <div class="campo"><label for="c-msg">Mensagem</label><textarea id="c-msg" name="msg" required></textarea><span class="erro"></span></div>
+        <button class="btn btn--bloco" type="submit">Enviar mensagem</button>
+        <p class="aviso-demo" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rod">
+    <div class="wrap rod__in">
+      <div><a href="#inicio" class="marca"><img src="../shared/emblem.svg" alt="" width="42" height="49"><span><b>TUTB</b><small>O Poder que Vem do Norte</small></span></a>
+        <p class="aviso-demo">Tradição Uniformizada Torcida Bicolor. Torcida organizada independente, sem vínculo administrativo com o Paysandu Sport Club.</p></div>
+      <nav aria-label="Rodapé"><b>A Torcida</b><a href="#historia">Quem somos</a><a href="#diretoria">Diretoria</a><a href="#subsedes">Subsedes</a><a href="#conduta">Estatuto</a></nav>
+      <nav aria-label="Rodapé 2"><b>Info</b><a href="#noticias">Notícias</a><a href="#loja">Loja</a><a href="#associe">Associe-se</a><a href="#contato">Contato</a><a href="#privacidade" id="link-priv">Privacidade</a></nav>
+      <div><b>Baixe o app</b><a class="btn btn--claro btn--pq" href="../app/index.html" style="margin-top:.6rem">Abrir app TUTB</a></div>
+    </div>
+    <div class="wrap rod__fim"><span>© <span id="ano"></span> TUTB · Protótipo com dados de exemplo</span><span>Emblema provisório — substituir pela marca oficial</span></div>
+  </footer>
+
+  <dialog class="modal" id="modal"><button class="modal__x" id="modal-x" aria-label="Fechar">×</button><div id="modal-corpo"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../shared/data.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

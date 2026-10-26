@@ -1,0 +1,30 @@
+feature,area,priority,original,clone,notes
+Planos de sócio,app,must,Mancha,yes,A03
+Cadastro de sócio,app,must,Mancha,yes,A04 validação local
+Carteirinha digital com QR,app,must,Mancha,yes,A05 QR gerado localmente
+Status/validade clara do plano,app,must,dor das avaliações,yes,corrige plano 'vencido' indevido
+Loja com carrinho,app,must,Mancha,yes,A06-A08 pagamento simulado
+Jogos e tabela,app,must,Mancha,yes,A02 dados de exemplo
+Notícias,app,should,Mancha,yes,A11-A12
+Rede Desconto,app,should,Mancha,yes,A10
+Caravanas,app,should,novo,yes,A09 diferencial
+Letras dos cantos,app,could,Gaviões,yes,A14 letras originais de exemplo
+Código de conduta,app,should,novo,yes,A13
+Suporte por formulário,app,should,dor das avaliações,yes,A13
+Campeonato interno,app,could,Mancha,no,fase 2
+PWA instalável/offline,app,should,novo,yes,manifest + service worker
+Menu com dropdowns,site,must,Gaviões,yes,W01
+Banner rotativo,site,must,Gaviões,yes,W02
+Próximo jogo com contagem,site,should,novo,yes,W03
+Notícias,site,must,Gaviões,yes,W04
+Quem somos/História,site,must,Gaviões,yes,W05 linha do tempo
+Ideologia e Responsabilidade social,site,must,Gaviões,yes,W06
+Diretoria e Subsedes,site,should,Gaviões,yes,W07
+Associe-se,site,must,Gaviões,yes,W08
+Loja,site,must,Gaviões,yes,W09
+Parceiros / Anuncie,site,should,Gaviões,yes,W10
+Contato,site,must,Gaviões,yes,W11
+Rádio/Vídeos,site,could,Gaviões,no,fase 2
+Logos e escudos oficiais,both,skip,-,no,exige autorização da TUTB/Paysandu
+Placar ao vivo licenciado,both,skip,-,no,provedor de dados pago
+Pagamento real,both,skip,-,no,precisa de gateway na fase backend

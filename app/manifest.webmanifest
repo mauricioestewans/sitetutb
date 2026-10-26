@@ -1,0 +1,14 @@
+{
+  "name": "TUTB — App da Torcida",
+  "short_name": "TUTB",
+  "description": "Sócio, carteirinha, loja, jogos e caravanas da Tradição Uniformizada Torcida Bicolor.",
+  "start_url": "./index.html#/",
+  "scope": "../",
+  "display": "standalone",
+  "background_color": "#06182B",
+  "theme_color": "#06182B",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "../shared/emblem.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
